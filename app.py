@@ -44,7 +44,7 @@ df_map = pd.DataFrame(
         "longitude": [pu_long, do_long]
     }
 )
-st.map(df_map)
+st.map(df_map, zoom=11)
 
 passengers = int(st.number_input('How many passengers will be there?', min_value=1))
 
